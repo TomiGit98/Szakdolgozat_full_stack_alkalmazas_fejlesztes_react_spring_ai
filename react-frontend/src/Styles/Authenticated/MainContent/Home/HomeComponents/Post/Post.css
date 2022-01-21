@@ -1,0 +1,36 @@
+.post-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.post { 
+    border-radius: 10px;
+    margin-bottom: 20px;
+    /*margin: 5px;*/
+    width: 100%;
+    max-width: 700px;
+    min-width: 350px;
+    box-shadow: 10px 10px 30px grey;
+    background-color: white;
+
+}
+
+.post-picture {
+    padding: 0px;
+    width: 100%;
+}
+
+.post-title-description-container {
+    padding: 10px;
+}
+
+.post-interaction-container {
+    width: 100%;
+    display: flex;
+}
+
+.post-interaction-container svg {
+    height: 20px;
+    width: 20px;
+}

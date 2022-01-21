@@ -1,0 +1,78 @@
+.friend-component-container {
+    display: flex;
+    box-shadow: 0px 0px 5px grey;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.friend-component-container:hover {
+    box-shadow: 0px 0px 20px grey;
+}
+
+.friend-component-thumbnail-container {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    min-width: 150px;
+    height: 150px;
+    padding: 15px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    /*box-shadow: 0px 0px 5px grey;*/
+}
+
+.friend-component-thumbnail-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 0px 5px black;
+}
+
+.friend-component-details {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.friend-component-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    width: 100%;
+}
+
+.friend-component-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width: 100%;
+}
+
+.friend-component-button-container button {
+    height: 45%;
+    width: 80%;
+    margin: 2px;
+    border-radius: 25px;
+    border: 1px solid black;
+    outline: none;
+    max-width: 400px;
+    background-color: black;
+    color: white;
+}
+
+.friend-component-button-container button:hover {
+    /*background-color: black;
+    color: white;*/
+
+    background-color: white;
+    color: black;
+}

@@ -1,0 +1,85 @@
+.create-photo-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.webcam-file-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 50px 20px grey;
+
+}
+
+.webcam-file-container button {
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    height: 100px;
+    width: 93%;
+    border-radius: 10px;
+}
+
+.webcam-file-container button:hover {
+    background-color: white;
+    color: black;
+}
+
+.option-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.camera {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 300px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.file {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 300px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.preview-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 50px 20px grey;
+}
+
+.preview-container button {
+    background-color: black;
+    color: white;
+    height: 100px;
+    width: 93%;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.preview-container button:hover {
+    background-color: white;
+    color: black;
+}

@@ -1,0 +1,25 @@
+.comment {
+    display: flex;
+    align-items: flex-start;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    box-shadow: 0px 0px 5px grey;
+    backdrop-filter: blur(2px);
+}
+
+.comment-thumbnail-container {
+    margin-right: 5px;
+}
+
+.comment-thumbnail-container img {
+    margin: 5px;
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.subcomment {
+    margin-left: 40px;
+}

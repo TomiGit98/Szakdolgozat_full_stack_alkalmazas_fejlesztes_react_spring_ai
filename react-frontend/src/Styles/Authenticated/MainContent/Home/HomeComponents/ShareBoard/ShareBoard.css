@@ -1,0 +1,24 @@
+.share-board-container-root {
+    display: flex;
+    justify-content: center;
+}
+
+.share-board-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 10px 10px 30px grey;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    max-width: 700px;
+}
+
+.share-board-item-containers {
+    display: flex;
+    justify-content: space-around;
+}
+
+.share-board-item-containers svg {
+    height: 40px;
+    width: 40px;
+}

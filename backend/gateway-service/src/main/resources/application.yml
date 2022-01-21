@@ -1,0 +1,99 @@
+spring:
+  application:
+    name: gateway-service
+  cloud:
+    gateway:
+      default-filters:
+        - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin
+#      globalcors:
+#        corsConfigurations:
+#          '[/login]':
+#            allowedOrigins: "http://localhost:3000"
+#            allowedMethods:
+#              - POST
+#            allowedHeaders: "*"
+#          '[/registration]':
+#            allowedOrigins: "http://localhost:3000"
+#            allowedMethods:
+#              - POST
+#            allowedHeaders: "*"
+#          '[/post]':
+#            allowedOrigins: "http://localhost:3000"
+#            allowedMethods:
+#              - POST
+#            allowedHeaders: "*"
+#          '[/post/single]':
+#            allowedOrigins: "http://localhost:3000"
+#            allowedMethods:
+#              - POST
+#            allowedHeaders: "*"
+      routes:
+        - id: login
+          uri: http://localhost:8081/login
+          predicates:
+            - Path=/login/**
+        - id: registration
+          uri: http://localhost:8082/registration
+          predicates:
+            - Path=/registration/**
+#        - id: post
+#          uri: http://localhost:8100/post
+#          predicates:
+#            - Path=/post/**
+        - id: post
+          uri: http://localhost:8100/post/single
+          predicates:
+            - Path=/post/**
+        - id: user-post
+          uri: http://localhost:8100/post/all
+          predicates:
+            - Path=/post/**
+        - id: feed
+          uri: http://localhost:9200/feed
+          predicates:
+            - Path=/feed/**
+        - id: friends
+          uri: http://localhost:8400/friends/all
+          predicates:
+            - Path=/friends/**
+        - id: addtofriends
+          uri: http://localhost:8400/addtofriends
+          predicates:
+            - Path=/addtofriends/**
+        - id: signfriend
+          uri: http://localhost:8400/signfriend
+          predicates:
+            - Path=/signfriend/**
+        - id: acceptfriendrequest
+          uri: http://localhost:8400/acceptfriendrequest
+          predicates:
+            - Path=/acceptfriendrequest/**
+        - id: auth
+          uri: http://localhost:8350/auth
+          predicates:
+            - Path=/auth/**
+        - id: verify
+          uri: http://localhost:8350/verify
+          predicates:
+            - Path=/verify/**
+        - id: getfriends
+          uri: http://localhost:8400/getfriends
+          predicates:
+            - Path=/getfriends/**
+
+eureka:
+  instance:
+    hostname: localhost
+    metadataMap:
+      instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+    preferIpAddress: true
+    leaseRenewalIntervalInSeconds: 5
+    lease-expiration-duration-in-seconds: 5
+  client:
+    fetchRegistry: true
+    registryFetchIntervalSeconds: 5
+    serviceUrl:
+      defaultZone: http://eureka:eureka@localhost:8761/eureka/
+
+server:
+  port: 8080

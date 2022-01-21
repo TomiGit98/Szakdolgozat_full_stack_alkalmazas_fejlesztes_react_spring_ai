@@ -1,0 +1,9 @@
+.navbar-item-holder-middle {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 60px;
+}

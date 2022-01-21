@@ -1,0 +1,23 @@
+.profile-stat-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    min-width: 100px;
+    border-radius: 10px;
+}
+
+.profile-stat-item:hover {
+    box-shadow: 0px 0px 5px gray;
+    
+}
+
+.profile-stat-item:hover svg {
+    fill: black;
+}
+
+.stat-item-icon svg {
+    height: 30px;
+    width: 30px;
+}

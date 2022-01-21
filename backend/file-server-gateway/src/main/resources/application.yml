@@ -1,0 +1,36 @@
+spring:
+  application:
+    name: file-server-gateway-service
+  cloud:
+    gateway:
+      default-filters:
+        - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin
+      globalcors:
+        corsConfigurations:
+          '[/upload/**]':
+            allowedOrigins: "http://localhost:3000"
+            allowedMethods:
+              - POST
+            allowedHeaders: "*"
+      routes:
+        - id: upload
+          uri: http://localhost:8300/upload
+          predicates:
+            - Path=/upload/**
+
+eureka:
+  instance:
+    hostname: localhost
+    metadataMap:
+      instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+    preferIpAddress: true
+    leaseRenewalIntervalInSeconds: 5
+    lease-expiration-duration-in-seconds: 5
+  client:
+    fetchRegistry: true
+    registryFetchIntervalSeconds: 5
+    serviceUrl:
+      defaultZone: http://eureka:eureka@localhost:8761/eureka/
+
+server:
+  port: 8150

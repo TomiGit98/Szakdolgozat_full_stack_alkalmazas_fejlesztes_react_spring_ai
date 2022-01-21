@@ -1,0 +1,10 @@
+.unauthenticatedMainContent {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    /*height: calc(100vh - 160px);*/
+    height: calc(110vh);
+    justify-content: center;
+    align-items: center;
+    background-color: white;/*#FFF300*/  /*#FFDE00*/ /*#39FF14*/
+}

@@ -1,0 +1,91 @@
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    padding-top: 30px;
+    border-radius: 10px;
+    min-height: 250px;
+    max-height: 550px;
+    box-shadow: 0px 0px 5px grey;
+}
+
+.loginForm-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    margin-top: 20px;
+    border-radius: 10px;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px grey;
+}
+
+.loginForm-bottom a {
+    font-weight: 500;
+     color: black;
+}
+
+.formTitle {
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px 15px 0px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.formInput {
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 30px;
+    border-radius: 10px;
+    border: 0px;
+    outline: none;
+    box-shadow: 0px 0px 5px grey;
+}
+
+.formInput:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.formLabelContainer {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.formButtonContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formButtonContainer a {
+    font-weight: 500;
+     color: black;
+}
+
+.formButton {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 30px;
+    width: 100%;
+    color: white;
+    background-color: black;
+    font-weight: bolder;
+    border-radius: 25px;
+    border: 0px;
+}
+
+.formButton:hover {
+    color: black;
+    background-color: white;
+    border: 1px black solid;
+}
+
+.error-div {
+    display: flex;
+    width: 85%;
+    color: red;
+}

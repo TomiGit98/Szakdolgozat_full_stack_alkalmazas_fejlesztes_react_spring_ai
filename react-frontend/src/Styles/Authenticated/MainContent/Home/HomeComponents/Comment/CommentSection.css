@@ -1,0 +1,71 @@
+.comment-section-root {
+    box-shadow: 0px 0px 5px grey;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px;
+}
+
+.comment-section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.comment-section svg{
+    height: 20px;
+    width: 20px;
+}
+
+.comment-section:hover svg{
+    border-radius: 10px;
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    fill: white;
+}
+
+.comment-section-user-input {
+    border-radius: 20px;
+    height: 35px;
+    width: 80%;
+    margin-right: 10px;
+    outline: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1rem;
+}
+
+.comment-section-comments {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.send-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+}
+
+.send-button-container button {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    border: 1px black solid;
+    height: 40px;
+    width: 100%;
+    outline: none;
+}
+
+.send-button-container:hover button {
+    background-color: white;
+    color: black;
+}

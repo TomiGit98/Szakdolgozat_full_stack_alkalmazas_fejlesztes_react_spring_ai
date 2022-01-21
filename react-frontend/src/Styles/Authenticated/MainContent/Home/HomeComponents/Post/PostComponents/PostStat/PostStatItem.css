@@ -1,0 +1,44 @@
+.post-stat-item {
+    border-radius: 10px;
+    border: 1px white solid;
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-stat-item svg {
+    width: 30px;
+    height: 30px;
+}
+
+.post-stat-item:hover {
+    color: black;
+    box-shadow: 0px 0px 5px grey;
+}
+
+.post-stat-rate-item {
+    border-radius: 10px;
+    border: 1px white solid;
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-stat-rate-item svg {
+    width: 30px;
+    height: 30px;
+}
+
+.post-stat-rate-item:hover {
+    box-shadow: 0px 0px 5px grey;
+}
+
+.post-stat-rate-item:hover svg {
+    
+}

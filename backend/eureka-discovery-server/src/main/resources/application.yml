@@ -1,0 +1,19 @@
+server:
+  port: 8761
+eureka:
+  server:
+    enable-self-preservation: true
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+logging:
+  level:
+    com.netflix.eureka: INFO
+    com.netflix.discovery: INFO
+spring:
+  application:
+    name: eureka-service

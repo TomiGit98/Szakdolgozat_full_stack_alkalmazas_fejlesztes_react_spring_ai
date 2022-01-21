@@ -1,0 +1,9 @@
+.navbar-item {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.navbar-item svg {
+    fill: black;
+}
