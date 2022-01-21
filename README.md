@@ -1,0 +1,1 @@
+# Szakdolgozat_full_stack_alkalmazas_fejlesztes_react_spring_ai
